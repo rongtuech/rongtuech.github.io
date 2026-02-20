@@ -33,6 +33,12 @@ jobs:
           hugo-version: "latest"
           extended: true
 
+      - name: Install Dart Sass
+        run: |
+          curl -sL "https://github.com/sass/dart-sass/releases/download/1.77.8/dart-sass-1.77.8-linux-x64.tar.gz" | tar xz -C .
+          echo "${{ github.workspace }}/dart-sass" >> $GITHUB_PATH
+          echo "PATH=${{ github.workspace }}/dart-sass:$PATH" >> $GITHUB_ENV
+
       - name: Build
         run: hugo --minify
 
