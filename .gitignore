@@ -1,0 +1,17 @@
+# Hugo build output
+public/
+
+# Hugo cache
+resources/_gen/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
+
+# Lock file (optional; remove if you want to track it)
+.hugo_build.lock
