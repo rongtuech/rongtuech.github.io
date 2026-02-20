@@ -1,0 +1,62 @@
+baseURL = "https://rongtuech.github.io/"
+languageCode = "en-us"
+title = "Dumb at Edge"
+theme = "anatole"
+
+[params]
+title = "Dumb at Edge"
+description = "Notes on Edge AI, Systems, and Things That Break"
+
+profilePicture = "images/tech_blog.png"
+
+# Sidebar takes (1 - contentratio); 0.8 = 20% sidebar, 80% content
+contentratio = 0.8
+# Footer copyright (use {{ YEAR }} for current year)
+copyright = "© Trung Ngo {{ YEAR }}"
+
+mainSections = ["post"]
+
+[params.author]
+name = "Trung Ngo"
+email = "trungngotan94@gmail.com"
+
+[[params.socialIcons]]
+icon = "fab fa-github"
+title = "GitHub"
+url = "https://github.com/rongtuech"
+
+[[params.socialIcons]]
+icon = "fab fa-linkedin"
+title = "LinkedIn"
+url = "https://www.linkedin.com/in/trung-ngo-270b83137/"
+
+# Main navigation
+[[menu.main]]
+name = "Home"
+identifier = "home"
+weight = 100
+url = "/"
+
+[[menu.main]]
+name = "Blog"
+identifier = "blog"
+weight = 200
+url = "/post/"
+
+[[menu.main]]
+name = "Edge AI"
+identifier = "edge-ai"
+weight = 300
+url = "/edge-ai/"
+
+[[menu.main]]
+name = "Experiments"
+identifier = "experiments"
+weight = 400
+url = "/experiments/"
+
+[[menu.main]]
+name = "About"
+identifier = "about"
+weight = 500
+url = "/about/"
